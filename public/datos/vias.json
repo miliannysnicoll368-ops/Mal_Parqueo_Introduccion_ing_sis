@@ -1,0 +1,149 @@
+{
+  "CR5-C10-C10C": {
+    "nombre": "Carrera 5 entre Calles 10 y 10C",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.246773,
+    "lng": -74.210117
+  },
+  "CR5-C10C-C11": {
+    "nombre": "Carrera 5 entre Calles 10C y 11",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.246608,
+    "lng": -74.210046
+  },
+  "CR5-C11-C12": {
+    "nombre": "Carrera 5 entre Calles 11 y 12",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.246305,
+    "lng": -74.210125
+  },
+  "CR5-C14-C15": {
+    "nombre": "Carrera 5 entre Calles 14 y 15",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.244362,
+    "lng": -74.210398
+  },
+  "CR5-C15-C16": {
+    "nombre": "Carrera 5 entre Calles 15 y 16",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.244035,
+    "lng": -74.210474
+  },
+  "CR5-C16-C17": {
+    "nombre": "Carrera 5 entre Calles 16 y 17",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.243646,
+    "lng": -74.210814
+  },
+  "CR5-C17-C18": {
+    "nombre": "Carrera 5 entre Calles 17 y 18",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.243066,
+    "lng": -74.210691
+  },
+  "CR5-C18-C19": {
+    "nombre": "Carrera 5 entre Calles 18 y 19",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.242247,
+    "lng": -74.210664
+  },
+  "CR5-C19-C20": {
+    "nombre": "Carrera 5 entre Calles 19 y 20",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.241938,
+    "lng": -74.210788
+  },
+  "CR5-C20-C21": {
+    "nombre": "Carrera 5 entre Calles 20 y 21",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.241387,
+    "lng": -74.210889
+  },
+  "CR5-C21-C22": {
+    "nombre": "Carrera 5 entre Calles 21 y 22",
+    "sector": "Av. Campo Serrano",
+    "tipo": "arterial",
+    "lat": 11.240597,
+    "lng": -74.210997
+  },
+  "C10C-CR4-CR5": {
+    "nombre": "Calle 10C entre Carreras 4 y 5",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.246598,
+    "lng": -74.210263
+  },
+  "C11-CR4-CR5": {
+    "nombre": "Calle 11 entre Carreras 4 y 5",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.246345,
+    "lng": -74.210212
+  },
+  "C12-CR5-CR6": {
+    "nombre": "Calle 12 entre Carreras 5 y 6",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.245633,
+    "lng": -74.210100
+  },
+  "C13-CR4-CR5": {
+    "nombre": "Calle 13 entre Carreras 4 y 5",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.245165,
+    "lng": -74.211096
+  },
+  "CR4-C13-C14": {
+    "nombre": "Carrera 4 entre Calles 13 y 14",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.245200,
+    "lng": -74.211250
+  },
+  "CR4-C14-C15": {
+    "nombre": "Carrera 4 entre Calles 14 y 15",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.244303,
+    "lng": -74.211438
+  },
+  "C15-CR3-CR4": {
+    "nombre": "Calle 15 entre Carreras 3 y 4",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.244220,
+    "lng": -74.211427
+  },
+  "C16-CR4-CR5": {
+    "nombre": "Calle 16 entre Carreras 4 y 5",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.243744,
+    "lng": -74.210507
+  },
+  "C16-CR5-CR6": {
+    "nombre": "Calle 16 entre Carreras 5 y 6",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.243559,
+    "lng": -74.210517
+  },
+  "CR4-C16-C17": {
+    "nombre": "Carrera 4 entre Calles 16 y 17",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.243637,
+    "lng": -74.211527
+  }
+}

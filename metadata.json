@@ -1,0 +1,6 @@
+{
+  "name": "Monitoreo Vial Santa Marta",
+  "description": "Sistema de monitoreo y análisis espacial de mal parqueo e invasión de andenes en Santa Marta con mapa de calor, cálculo de criticidad y resumen operativo.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
