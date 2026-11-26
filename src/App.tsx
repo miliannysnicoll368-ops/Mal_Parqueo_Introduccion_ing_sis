@@ -64,9 +64,9 @@ export default function App() {
     setErrorCarga('');
     try {
       const [resVias, resCriterios, resReportes] = await Promise.all([
-        fetch('/datos/vias.json'),
-        fetch('/datos/criterios.json'),
-        fetch('/datos/reportes.json'),
+        fetch('./datos/vias.json'),
+        fetch('./datos/criterios.json'),
+        fetch('./datos/reportes.json'),
       ]);
 
       if (!resVias.ok || !resCriterios.ok || !resReportes.ok) {

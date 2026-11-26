@@ -260,7 +260,7 @@
     "cuadra": "C16-CR5-CR6",
     "categoria": "doble_fila",
     "actor": "vehiculo_particular",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.12_AM_9fca0d24.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.12_AM_9fca0d24.jpeg",
     "criticidad": { "puntaje": 5, "nivel": "Medio" }
   },
   {
@@ -272,7 +272,7 @@
     "cuadra": "CR5-C21-C22",
     "categoria": "invasion_anden",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM__1__00ac1255.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM__1__00ac1255.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -284,7 +284,7 @@
     "cuadra": "CR5-C16-C17",
     "categoria": "invasion_anden",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.14_AM__1__d105c44b.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.14_AM__1__d105c44b.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -296,7 +296,7 @@
     "cuadra": "CR5-C16-C17",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__1__d357aeaa.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__1__d357aeaa.jpeg",
     "criticidad": { "puntaje": 7, "nivel": "Alto" }
   },
   {
@@ -308,7 +308,7 @@
     "cuadra": "CR5-C21-C22",
     "categoria": "invasion_anden",
     "actor": "vehiculo_particular",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM__2__4bc5b2ad.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM__2__4bc5b2ad.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -320,7 +320,7 @@
     "cuadra": "CR5-C17-C18",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM_51e4c57a.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.13_AM_51e4c57a.jpeg",
     "criticidad": { "puntaje": 7, "nivel": "Alto" }
   },
   {
@@ -332,7 +332,7 @@
     "cuadra": "CR5-C19-C20",
     "categoria": "invasion_anden",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.14_AM_c3744b67.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.14_AM_c3744b67.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -344,7 +344,7 @@
     "cuadra": "CR5-C15-C16",
     "categoria": "invasion_anden",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__2__172bab64.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__2__172bab64.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -356,7 +356,7 @@
     "cuadra": "CR5-C16-C17",
     "categoria": "invasion_anden",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM_e622c5c5.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM_e622c5c5.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   },
   {
@@ -368,7 +368,7 @@
     "cuadra": "C16-CR5-CR6",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__3__b75744ec.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__3__b75744ec.jpeg",
     "criticidad": { "puntaje": 5, "nivel": "Medio" }
   },
   {
@@ -380,7 +380,7 @@
     "cuadra": "C16-CR5-CR6",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__2__c5f848dd.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__2__c5f848dd.jpeg",
     "criticidad": { "puntaje": 5, "nivel": "Medio" }
   },
   {
@@ -392,7 +392,7 @@
     "cuadra": "CR5-C15-C16",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__3__cc692acb.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.15_AM__3__cc692acb.jpeg",
     "criticidad": { "puntaje": 7, "nivel": "Alto" }
   },
   {
@@ -404,7 +404,7 @@
     "cuadra": "C11-CR4-CR5",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM_93537c56.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM_93537c56.jpeg",
     "criticidad": { "puntaje": 5, "nivel": "Medio" }
   },
   {
@@ -416,7 +416,7 @@
     "cuadra": "C16-CR4-CR5",
     "categoria": "bloqueo_rampa_cebra_paradero",
     "actor": "motocicleta",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__1__152df393.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.16_AM__1__152df393.jpeg",
     "criticidad": { "puntaje": 5, "nivel": "Medio" }
   },
   {
@@ -428,7 +428,7 @@
     "cuadra": "CR5-C18-C19",
     "categoria": "invasion_anden",
     "actor": "mobiliario_comercial",
-    "foto": "/assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.17_AM_36621a62.jpeg",
+    "foto": "assets/aistudio/WhatsApp_Image_2026-11-26_at_9.50.17_AM_36621a62.jpeg",
     "criticidad": { "puntaje": 6, "nivel": "Medio" }
   }
 ]
