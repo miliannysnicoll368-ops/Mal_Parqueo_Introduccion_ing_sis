@@ -14,7 +14,7 @@
 | **Cristofer Garzon** | cagarzon@unimagdalena.edu.co | Diseñador de interfaz y documentador
 
 ## Enlace al prototipo
-* **Prototipo publicado:** `[Pegar aquí el enlace de GitHub Pages cuando se active, o indicar uso con Live Server]`
+https://mal-parqueo-introduccion-ing-sis.netlify.app/
 
 ## Cómo abrir y probar el proyecto
 1. Clonar o descargar este repositorio (en la rama correspondiente).
