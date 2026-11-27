@@ -10,8 +10,8 @@
 | :--- | :--- | :--- |
 | **Thally Guerrero Camargo** | tmguerrero@unimagdalena.edu.co | Analista de campo y privacidad |
 | **Miliannys Medina** | mnmedina@unimagdalena.edu.co | Integrador del mapa e instrucciones para la IA |
-| **Lauren Muñoz** | ldmunoz@unimagdalena.edu.co | Ingeniero de lógica y clasificación *(confirmar si es @~.)* |
-| **Cristofer Garzon** | cagarzon@unimagdalena.edu.co | Diseñador de interfaz y documentador *(confirmar si es @ZYsko)* |
+| **Lauren Muñoz** | ldmunoz@unimagdalena.edu.co | Ingeniero de lógica y clasificación
+| **Cristofer Garzon** | cagarzon@unimagdalena.edu.co | Diseñador de interfaz y documentador
 
 ## Enlace al prototipo
 * **Prototipo publicado:** `[Pegar aquí el enlace de GitHub Pages cuando se active, o indicar uso con Live Server]`
