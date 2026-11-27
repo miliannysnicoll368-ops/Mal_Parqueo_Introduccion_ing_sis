@@ -1,0 +1,82 @@
+[
+  {
+    "codigo": "CR5-C10-C12",
+    "nombre": "Carrera 5 entre calles 10C y 12",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.246450,
+    "lng": -74.210150
+  },
+  {
+    "codigo": "C13-CR4-CR5",
+    "nombre": "Calle 13 y Carrera 4 (calles 12 a 14)",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.245400,
+    "lng": -74.211050
+  },
+  {
+    "codigo": "CR4-C14-C15",
+    "nombre": "Carrera 4 entre calles 14 y 15",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.244300,
+    "lng": -74.211400
+  },
+  {
+    "codigo": "C14-CR6-CR7",
+    "nombre": "Calle 14 entre carreras 6 y 7",
+    "sector": "Centro Histórico",
+    "tipo": "secundaria",
+    "lat": 11.244650,
+    "lng": -74.209150
+  },
+  {
+    "codigo": "CR5-C14-C16",
+    "nombre": "Carrera 5 entre calles 14 y 16",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.244290,
+    "lng": -74.210400
+  },
+  {
+    "codigo": "CR5-C16-C17",
+    "nombre": "Carrera 5 entre calles 16 y 17 (inc. C16)",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.243690,
+    "lng": -74.210560
+  },
+  {
+    "codigo": "CR5-C17-C18",
+    "nombre": "Carrera 5 entre calles 17 y 18",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.242890,
+    "lng": -74.210660
+  },
+  {
+    "codigo": "CR5-C19-C20",
+    "nombre": "Carrera 5 entre calles 19 y 20",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.241950,
+    "lng": -74.210660
+  },
+  {
+    "codigo": "CR5-C20-C22",
+    "nombre": "Carrera 5 entre calles 20 y 22",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.240880,
+    "lng": -74.210940
+  },
+  {
+    "codigo": "CR1C-C17-C19",
+    "nombre": "Carrera 1C entre calles 17 y 19",
+    "sector": "Centro Histórico",
+    "tipo": "arterial",
+    "lat": 11.243190,
+    "lng": -74.215110
+  }
+]
