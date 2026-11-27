@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type LType from 'leaflet';
-import { cargarLeafletConHeat } from '../utils/leafletInit';
+import { crearCapaCalor, L } from '../utils/leafletInit';
 import { obtenerPuntajeMaximo } from '../utils/criticidad';
 import { NOMBRES_ACTOR, NOMBRES_CATEGORIA } from '../utils/resumen';
 import type { Criterios, ReporteCalculado, ViasMap } from '../types/monitoring';
@@ -47,48 +47,41 @@ export function MapaTablero({
 
   // Inicialización única del mapa
   useEffect(() => {
-    let cancelado = false;
+    if (!containerRef.current || mapRef.current) return;
 
-    async function init() {
-      if (!containerRef.current || mapRef.current) return;
-      const L = await cargarLeafletConHeat();
-      if (cancelado || !containerRef.current) return;
+    const map = L.map(containerRef.current, {
+      zoomControl: true,
+      scrollWheelZoom: true,
+    }).setView([11.2442, -74.2108], 16);
 
-      const map = L.map(containerRef.current, {
-        zoomControl: true,
-        scrollWheelZoom: true,
-      }).setView([11.2442, -74.2108], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors',
+    }).addTo(map);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; OpenStreetMap contributors',
-      }).addTo(map);
+    const pointsGroup = L.layerGroup().addTo(map);
 
-      const pointsGroup = L.layerGroup().addTo(map);
-
-      mapRef.current = map;
-      pointsRef.current = pointsGroup;
-      setMapaListo(true);
-    }
-
-    init();
+    mapRef.current = map;
+    pointsRef.current = pointsGroup;
+    setMapaListo(true);
 
     return () => {
-      cancelado = true;
-      if (mapRef.current) {
-        mapRef.current.remove();
-        mapRef.current = null;
-        pointsRef.current = null;
-        heatRef.current = null;
-      }
+      map.remove();
+      mapRef.current = null;
+      pointsRef.current = null;
+      heatRef.current = null;
+      setMapaListo(false);
     };
   }, []);
 
-  // Reajuste de tamaño ante cambios de contenedor
+  // Reajuste de tamaño ante cambios de contenedor (incluye redibujado de capa de calor)
   useEffect(() => {
     if (!mapaListo || !containerRef.current || !mapRef.current) return;
     const observer = new ResizeObserver(() => {
-      mapRef.current?.invalidateSize();
+      if (!mapRef.current) return;
+      mapRef.current.invalidateSize();
+      const heatLayer = heatRef.current as { _reset?: () => void } | null;
+      heatLayer?._reset?.();
     });
     observer.observe(containerRef.current);
     return () => observer.disconnect();
@@ -104,54 +97,43 @@ export function MapaTablero({
 
   // Actualización de capa de calor y puntos individuales
   useEffect(() => {
-    let cancelado = false;
+    if (!mapaListo || !mapRef.current || !pointsRef.current) return;
 
-    async function syncLayers() {
-      if (!mapaListo || !mapRef.current || !pointsRef.current) return;
-      const L = await cargarLeafletConHeat();
-      if (cancelado || !mapRef.current || !pointsRef.current) return;
+    const map = mapRef.current;
+    const pointsGroup = pointsRef.current;
 
-      const map = mapRef.current;
-      const pointsGroup = pointsRef.current;
+    if (heatRef.current) {
+      map.removeLayer(heatRef.current);
+      heatRef.current = null;
+    }
+    pointsGroup.clearLayers();
 
-      if (heatRef.current) {
-        map.removeLayer(heatRef.current);
-        heatRef.current = null;
-      }
-      pointsGroup.clearLayers();
+    const maxPuntaje = obtenerPuntajeMaximo(criterios);
 
-      const maxPuntaje = obtenerPuntajeMaximo(criterios);
-      const lWithHeat = L as unknown as {
-        heatLayer?: (
-          latlngs: [number, number, number][],
-          options?: Record<string, unknown>
-        ) => LType.Layer;
-      };
+    if (verCalor && reportes.length > 0) {
+      const puntosCalor: [number, number, number][] = reportes.map((r) => [
+        r.lat,
+        r.lng,
+        Math.min(1, Math.max(0.25, (r.criticidad?.puntaje ?? 1) / maxPuntaje)),
+      ]);
 
-      if (verCalor && reportes.length > 0 && typeof lWithHeat.heatLayer === 'function') {
-        const puntosCalor: [number, number, number][] = reportes.map((r) => [
-          r.lat,
-          r.lng,
-          Math.min(1, Math.max(0.15, (r.criticidad?.puntaje ?? 1) / maxPuntaje)),
-        ]);
+      heatRef.current = crearCapaCalor(puntosCalor, {
+        radius: 34,
+        blur: 24,
+        minOpacity: 0.42,
+        maxZoom: 17,
+        max: 1.0,
+        gradient: {
+          0.2: '#2563eb',
+          0.45: '#06b6d4',
+          0.65: '#f59e0b',
+          0.85: '#ef4444',
+          1.0: '#991b1b',
+        },
+      }).addTo(map);
+    }
 
-        heatRef.current = lWithHeat
-          .heatLayer(puntosCalor, {
-            radius: 30,
-            blur: 22,
-            maxZoom: 18,
-            max: 1.0,
-            gradient: {
-              0.25: '#2563eb',
-              0.55: '#f59e0b',
-              0.8: '#ef4444',
-              1.0: '#991b1b',
-            },
-          })
-          .addTo(map);
-      }
-
-      if (verPuntos) {
+    if (verPuntos) {
         for (const r of reportes) {
           const nivel = r.criticidad?.nivel || 'Bajo';
           const puntaje = r.criticidad?.puntaje ?? 0;
@@ -211,12 +193,6 @@ export function MapaTablero({
           pointsGroup.addLayer(marcador);
         }
       }
-    }
-
-    syncLayers();
-    return () => {
-      cancelado = true;
-    };
   }, [mapaListo, reportes, vias, criterios, verCalor, verPuntos, onSeleccionarReporte]);
 
   return (

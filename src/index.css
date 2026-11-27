@@ -35,6 +35,10 @@
   background: #e2e8f0;
 }
 
+.leaflet-heatmap-layer {
+  pointer-events: none;
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: 10px;
   border: 1px solid #e2e8f0;

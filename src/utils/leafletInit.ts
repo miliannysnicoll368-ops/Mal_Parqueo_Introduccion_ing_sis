@@ -1,15 +1,27 @@
 import L from 'leaflet';
+import { HeatLayer } from 'leaflet.heat';
 
-// Asegura que window.L exista antes de cargar el plugin leaflet.heat en Vite
-export async function cargarLeafletConHeat(): Promise<typeof L> {
-  if (typeof window !== 'undefined') {
-    (window as unknown as { L: typeof L }).L = L;
-    const lAny = L as unknown as { heatLayer?: unknown };
-    if (typeof lAny.heatLayer !== 'function') {
-      await import('leaflet.heat');
-    }
-  }
-  return L;
+export interface OpcionesCalor {
+  radius?: number;
+  blur?: number;
+  minOpacity?: number;
+  maxZoom?: number;
+  max?: number;
+  gradient?: Record<number, string>;
+}
+
+/**
+ * Crea una instancia de capa de calor compatible con leaflet.heat v1.0.1 y Leaflet 1.9.x.
+ */
+export function crearCapaCalor(
+  puntos: [number, number, number][],
+  opciones: OpcionesCalor = {}
+): L.Layer {
+  const HeatConstructor = HeatLayer as unknown as new (
+    latlngs: [number, number, number][],
+    options?: OpcionesCalor
+  ) => L.Layer;
+  return new HeatConstructor(puntos, opciones);
 }
 
 export { L };
