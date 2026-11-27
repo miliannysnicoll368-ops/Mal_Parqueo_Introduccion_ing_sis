@@ -17,7 +17,7 @@ La aplicación permite registrar incidentes de mal parqueo e invasión de andene
 
 ## Enlace al prototipo publicado
 
-- **GitHub Pages:** `https://<usuario>.github.io/<repositorio>/` *(reemplazar tras publicar la carpeta compilada `dist/`)*
+- https://mal-parqueo-introduccion-ing-sis.netlify.app/
 
 ---
 
